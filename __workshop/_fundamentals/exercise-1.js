@@ -7,6 +7,8 @@
 
 const convertToString = (arr) => {
   // Insert missing solution please
+  const newArray = arr.toString().split(",");
+    return newArray;
 };
 
 // Part 2 - Test

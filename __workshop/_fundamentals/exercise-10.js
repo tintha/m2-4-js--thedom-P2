@@ -28,6 +28,11 @@
 
 const uniqueElements = (arr1, arr2) => {
   // Your code here
+  if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
+    return undefined;
+  }
+  return arr1.concat(arr2)
+    .filter(element => !arr1.includes(element) || !arr2.includes(element));
 };
 
 // Part 2 - Test

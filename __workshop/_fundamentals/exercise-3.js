@@ -16,6 +16,7 @@
 
 const insert = (arr, obj) => {
   // Insert missing solution please
+  return arr.map(element => { let newElement = Object.assign(element, obj); return newElement; } );
 };
 
 // Part 2 - Test

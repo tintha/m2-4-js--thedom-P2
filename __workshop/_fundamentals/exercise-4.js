@@ -12,6 +12,19 @@
 
 const count = (arr, key) => {
   // Insert missing solution please
+  
+  let sum = 0;
+  arr.forEach((element) => {
+    if (!element.hasOwnProperty(key)) {
+      sum += 0;
+    } else if (isNaN(element[key])) {
+      sum += 0; 
+    } else {
+    sum += element[key];
+    }
+  });
+  
+  return sum;
 };
 
 // Part 2 - Test

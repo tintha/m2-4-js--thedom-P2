@@ -9,6 +9,12 @@
 
 const addNumbers = (...nums) => {
   // Insert missing solution please
+  const onlyNumbers = nums.filter(element => typeof element == "number");
+    if (onlyNumbers.length < 1) {
+        return undefined;
+    } else {
+    return onlyNumbers.reduce((acc, element) => acc + (element * element), 0);
+    }
 };
 
 // Part 2 - Test

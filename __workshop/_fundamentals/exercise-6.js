@@ -13,6 +13,17 @@
 
 function isPalindrome(theString) {
   // Your code here
+  if (typeof theString !== "string") {
+    return undefined;
+  }
+
+  let reversedString = theString.split("").reverse().join("");
+
+  if (theString === reversedString) {
+    return true;
+    } else {
+    return false;
+    }
 }
 
 // Part 2 - Test

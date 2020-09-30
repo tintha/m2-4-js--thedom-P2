@@ -15,6 +15,9 @@
 
 const addValues = (arr, obj) => {
   // Insert missing solution please
+  // "If the provided key is not any of the objects, return null for that value;" --- I don't understand
+  arr.forEach(element => Object.assign(element, obj));
+    return arr;
 };
 
 // Part 2 - Test
